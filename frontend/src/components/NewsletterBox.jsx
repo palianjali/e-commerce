@@ -15,7 +15,7 @@ const NewsletterBox = () => {
         const res = await axios.post('https://e-commerce-3-itle.onrender.com/api/subscribe', {email})
         setMessage(res.data.message)
         setEmail('')
-       navigate('/about')
+       navigate('/')
 
       }
       catch(err){
