@@ -9,9 +9,9 @@ const Navbar = () => {
     const [visible, setVisible] = useState(false);
 
     return (
-        <div className='flex items-center justify-between py-5 font-medium'>
-            
-            <Link
+        <div className='flex items-center justify-between font-medium'>
+
+          <Link
             to='/'
             >
             <img src={assets.logo}
@@ -56,6 +56,9 @@ const Navbar = () => {
                 </NavLink>
 
             </ul>
+  
+
+
             <div className='flex items-center gap-6'>
                 <img src={assets.search_icon} alt=""
                     className='w-7 cursor-pointer'

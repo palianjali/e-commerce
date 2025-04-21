@@ -17,7 +17,12 @@ const App = () => {
   return (
    <div className='flex flex-col gap-10'>
      <div className='px-4 sm:px-[5vw] md:px-[7vw] lg-[9vw]'>
-      <Navbar />
+   
+      <div className="pt-0 w-full"> {/* Adjust based on your navbar height */}
+  {/* Page content goes here */}
+     
+  <Navbar />
+</div>
      <Routes>
 
         <Route path='/' element={<Home />}/>
