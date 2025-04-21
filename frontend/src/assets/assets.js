@@ -19,6 +19,12 @@ import exchangeicon from './exchangeicon.png'
 import support from './support.png'
 import quality from './quality.png'
 import logo2 from './logo2.png'
+import drop_down_icon from './drop_down_icon.jpg';
+import men1_img from './men1_img.jpg'
+import men2_img from './men2_img.jpg'
+import kids1_img from './kids1_img.jpg'
+import kids2_img from './kids2_img.jpg'
+
 export const assets ={
     logo,
     search_icon,
@@ -31,7 +37,8 @@ export const assets ={
     exchangeicon,
     quality,
     support,
-    logo2
+    logo2,
+    drop_down_icon
 }
 
 export const products =[
@@ -89,11 +96,11 @@ export const products =[
         description:'Cotton blend',
         price:298,
         image:[p5_img],
-        category:'Women',
-        subCategory: 'Round Neck',
+        category:'Men',
+        subCategory: 'Topwear',
         sizes:['S','M','L'],
         date:171663445689,
-        bestseller:false
+        bestseller:true
     },
     {
         id:'aaaf',
@@ -132,5 +139,56 @@ export const products =[
         bestseller:true
     },
 
+    {
+        id:'aaah',
+        name: "Lymio Men Cargo || Men Cargo Pants || Men Cargo Pants Cotton || Cargos for Men (Cargo-97-100)",
+        description:'Cargo',
+        price: 799,
+        image:[men1_img],
+        category:'Men',
+        subCategory: 'Cargo',
+        sizes:['S','M','L'],
+        date:171663445689,
+        bestseller:true
+    },
 
+
+    {
+        id:'aaai',
+        name: "The Indian Garage Co Men Regular Fit Checkered Full Sleeves Cutaway Collar Casual Shirt",
+        description:'Checkered',
+        price: 614,
+        image:[men2_img],
+        category:'Men',
+        subCategory: 'Cutaway',
+        sizes:['S','M','L'],
+        date:171663445689,
+        bestseller:false
+    },
+
+    {
+        id:'aaaj',
+        name: "Pure Cotton Printed Pyjama Set for Girls | Sleepwear | Night Suit, Night Wear | Long Sleeves T-Shirt & Pyjama | Regular Wear | 0-14 Years",
+        description:'All Over Print',
+        price: 599,
+        image:[kids1_img],
+        category:'Kids',
+        subCategory: 'Pajama Set',
+        sizes:['S','M','L'],
+        date:171663445689,
+        bestseller:true
+    },
+
+    {
+        id:'aaaj',
+        name: "Kidbea® Baby Girls Midi/Knee Frocks Birthday Gift | Summer Dress | New Cute Trendy Frock Made with 100% Linen Fabrics",
+        description:'Midi',
+        price: 759,
+        image:[kids2_img],
+        category:'Kids',
+        subCategory: 'Midi',
+        sizes:['S','M','L'],
+        date:171663445689,
+        bestseller:true
+    },
 ]

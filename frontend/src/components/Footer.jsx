@@ -5,7 +5,7 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div>
+    <div className=''>
       <div className='bg-[#041222]  pt-10 items-center justify-center flex'>
         <div className='flex flex-col items-center text-center sm:grid sm:grid-cols-[3fr_1fr_1fr] sm:text-left sm:items-start gap-14 my-10 mx-5 text-sm'>
 

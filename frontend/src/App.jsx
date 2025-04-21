@@ -15,7 +15,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-   <div>
+   <div className='flex flex-col gap-10'>
      <div className='px-4 sm:px-[5vw] md:px-[7vw] lg-[9vw]'>
       <Navbar />
      <Routes>
@@ -34,7 +34,7 @@ const App = () => {
        
        
     </div>
-    <Footer />
+    <Footer/>
    </div>
   )
 }
