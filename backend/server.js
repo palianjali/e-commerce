@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 // CORS setup for frontend (change the URL to your actual frontend URL)
 app.use(cors({
-    origin: "https://your-frontend.vercel.app" // Replace with your actual frontend URL
+    origin: "https://e-commerce-omega-two-33.vercel.app" // Replace with your actual frontend URL
 }));
 
 // Middleware for parsing JSON requests
