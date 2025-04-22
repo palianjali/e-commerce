@@ -11,6 +11,9 @@ import PlaceOrder from './pages/PlaceOrder'
 import Navbar from './components/Navbar'
 import Orders from './pages/Orders'
 import Footer from './components/Footer'
+import SearchBar from './components/SearchBar'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 
 const App = () => {
@@ -20,8 +23,9 @@ const App = () => {
    
       <div className="pt-0 w-full"> {/* Adjust based on your navbar height */}
   {/* Page content goes here */}
-     
+     <ToastContainer />
   <Navbar />
+  <SearchBar/>
 </div>
      <Routes>
 
@@ -32,7 +36,7 @@ const App = () => {
         <Route path='/cart' element={<Cart />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/orders' element={<Orders />}/>
-        <Route path='/product/:_id' element={< Product/>}/>
+        <Route path='/product/:productId' element={< Product/>}/>
         <Route path='/place-order' element={<PlaceOrder />}/>
        </Routes>
        

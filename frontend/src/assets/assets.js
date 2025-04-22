@@ -24,6 +24,8 @@ import men1_img from './men1_img.jpg'
 import men2_img from './men2_img.jpg'
 import kids1_img from './kids1_img.jpg'
 import kids2_img from './kids2_img.jpg'
+import men3_img from './men3_img.jpg'
+import cross_icon from './cross_icon.png'
 
 export const assets ={
     logo,
@@ -38,7 +40,8 @@ export const assets ={
     quality,
     support,
     logo2,
-    drop_down_icon
+    drop_down_icon,
+    cross_icon
 }
 
 export const products =[
@@ -47,10 +50,10 @@ export const products =[
         name: 'Round Neck Cotton Top',
         description:'A lightweight',
         price:100,
-        image:[p1_img],
+        image:[p1_img,p2_img],
         category:'Women',
         subCategory: 'Topwear',
-        sizes:['S','M','L'],
+        sizes:['S ','M ','L '],
         date:171663445689,
         bestseller:true
     },
@@ -73,7 +76,7 @@ export const products =[
         price:999,
         image:[p3_mg],
         category:'Women',
-        subCategory: 'Zipper',
+        subCategory: 'Topwear',
         sizes:['S','M','L'],
         date:171663445689,
         bestseller:true
@@ -85,7 +88,7 @@ export const products =[
         price:269,
         image:[p4_img],
         category:'Women',
-        subCategory: 'Zipper',
+        subCategory: 'Topwear',
         sizes:['S','M','L'],
         date:171663445689,
         bestseller:true
@@ -187,6 +190,19 @@ export const products =[
         image:[kids2_img],
         category:'Kids',
         subCategory: 'Midi',
+        sizes:['S','M','L'],
+        date:171663445689,
+        bestseller:true
+    },
+
+    {
+        id:'aaah',
+        name: "Boldfit Jacket For Men Winter Wear Puffer Standard Length Jacket For Men Monsoon Winter Wear For Men",
+        description:'Padded Jacket',
+        price: 999,
+        image:[men3_img],
+        category:'Men',
+        subCategory: 'Winterwear',
         sizes:['S','M','L'],
         date:171663445689,
         bestseller:true
