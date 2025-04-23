@@ -26,6 +26,8 @@ import kids1_img from './kids1_img.jpg'
 import kids2_img from './kids2_img.jpg'
 import men3_img from './men3_img.jpg'
 import cross_icon from './cross_icon.png'
+import razorpay from './razorpay_img.png'
+import about_us_img from './about_us_img.avif'
 
 export const assets ={
     logo,
@@ -41,7 +43,9 @@ export const assets ={
     support,
     logo2,
     drop_down_icon,
-    cross_icon
+    cross_icon,
+    razorpay,
+    about_us_img
 }
 
 export const products =[

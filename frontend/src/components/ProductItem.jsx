@@ -22,7 +22,7 @@ to={`/product/${id}`}
 </div>
 
 <p className='font-semibold text-sm'>{name}</p>
-<p className='text-gray-600 text-xs'>${price}</p>
+<p className='text-gray-600 text-xs'>{currency}{price}</p>
 <p className='text-gray-600 text-xs'>{subCategory}</p>
 
 </div>
