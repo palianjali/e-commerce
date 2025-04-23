@@ -28,6 +28,7 @@ import men3_img from './men3_img.jpg'
 import cross_icon from './cross_icon.png'
 import razorpay from './razorpay_img.png'
 import about_us_img from './about_us_img.avif'
+import contact_us_img from './contact_us_img.webp'
 
 export const assets ={
     logo,
@@ -45,7 +46,8 @@ export const assets ={
     drop_down_icon,
     cross_icon,
     razorpay,
-    about_us_img
+    about_us_img,
+    contact_us_img
 }
 
 export const products =[

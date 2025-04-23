@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '../components/Title'
 import { assets } from '../assets/assets'
+import NewsletterBox from '../components/NewsletterBox'
 const About = () => {
   return (
     <div>
@@ -40,6 +41,7 @@ const About = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius at vitae blanditiis odio, sequi temporibus animi quidem necessitatibus amet repellendus culpa voluptatibus aut nisi, quaerat esse laudantium, recusandae nobis?</p>
         </div>
       </div>
+      <NewsletterBox />
     </div>
   )
 }
