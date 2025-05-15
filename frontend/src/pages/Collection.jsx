@@ -3,7 +3,7 @@ import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
 import Title from '../components/Title';
 import ProductItem from '../components/ProductItem';
-
+import { ChevronDownIcon } from '@heroicons/react/24/outline';  // Outline version
 
 const Collection = () => {
 
@@ -94,9 +94,10 @@ const Collection = () => {
 
       <div className='min-w-60'>
         <p onClick={()=>setShowFilter(!showFilter)} className='my-2 text-xl flex items-center cursor-pointer gap-2'>FILTERS
-          <img src={assets.drop_down_icon} alt="" 
+          {/* <img src={assets.drop_down_icon} alt="" 
           className={`h-6 sm:hidden ${showFilter ? 'rotate-90': ''}`}
-          />
+          /> */}
+          <ChevronDownIcon className={`h-6 sm:hidden ${showFilter ? 'rotate-90': ''}`}/>
         </p>
         {/* Category Filter */}
 

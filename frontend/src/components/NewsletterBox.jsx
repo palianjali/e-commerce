@@ -7,23 +7,23 @@ const NewsletterBox = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  
 
-    const onSubmitHandler = async(e) =>{
-        e.preventDefault();
-      try{
-        const res = await axios.post('https://e-commerce-3-itle.onrender.com/api/subscribe', {email})
-        setMessage(res.data.message)
-        setEmail('')
-       navigate('/')
 
-      }
-      catch(err){
-        setMessage(err.response?.data?.message || 'Something went Wrong')
-        console.log(err);
-        
-      }
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
+    try {
+      //create a request 
+      const res = await axios.post('https://e-commerce-3-itle.onrender.com/api/subscribe', { email })
+      setMessage(res.data.message);
+      setEmail('');
+      navigate('/');
     }
+    catch (err) {
+      setMessage(err.response?.data?.message || 'Something went Wrong')
+      console.log(err);
+
+    }
+  }
   return (
     <div className='text-center'>
       <p className='text-2xl font-medium text-gray-800'>Subscribe now and get 20% off</p>
@@ -31,19 +31,19 @@ const NewsletterBox = () => {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nostrum veniam veritatis error eligendi quo adipisci libero quibusdam reiciendis quod, inventore ex excepturi iure praesentium, facere pariatur soluta laborum ea.
       </p>
       <form onSubmit={onSubmitHandler}
-      className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'
+        className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'
       >
-        <input 
+        <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        placeholder='Enter your email'
-        className='w-full sm:flex-1 outline-none'
-        required
+          placeholder='Enter your email'
+          className='w-full sm:flex-1 outline-none'
+          required
         />
-        <button type='submit' className='bg-black text-white text-xs px-10 py-4'>SUBSCRIBE</button>
+        <button type='submit' className='bg-black text-white text-xs px-10 py-4 cursor-pointer'>SUBSCRIBE</button>
       </form>
-      {message && <p className='mt-4 text-sm text-green-400'>{message}</p>}
+      {message && <p className='mt-4 text-sm text-red-500'>{message}</p>}
     </div>
   )
 }

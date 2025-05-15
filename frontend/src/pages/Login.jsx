@@ -17,7 +17,7 @@ const Login = () => {
         <hr className='border-none h-[1.5px] w-8 bg-gray-800' />
       </div>
 
-      {currentState === 'Login' ? '' :
+      {currentState === 'Login' ? ' ' :
         <input type="text"
           className='w-full py-2 border border-b-gray-800'
           placeholder='Name'

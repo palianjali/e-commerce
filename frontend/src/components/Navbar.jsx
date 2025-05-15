@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 // import MenuIcon from '@mui/icons-material/Menu'
-
+import { Bars3Icon, Bars4Icon, BookmarkSlashIcon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon } from '@heroicons/react/24/outline';  // Outline version
 
 const Navbar = () => {
 
@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className='flex items-center justify-between font-medium'>
 
             <Link
-                to='/'
+                to='/' // redirect to HomePage
             >
                 <img src={assets.logo}
                     className='w-36'
@@ -24,11 +24,11 @@ const Navbar = () => {
             <ul className='hidden sm:flex gap-5 text-xl  text-gray-700'>
                 <NavLink
                     to='/'
-                    className='flex flex-col items-center gap-1 hover:border-1 border-black'>
+                    className='flex flex-col items-center gap-1  border-black'>
                     <p>
                         HOME
                     </p>
-                    <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
+                    <hr className='w-2/3 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
                 <NavLink
                     to='/collection'
@@ -62,21 +62,25 @@ const Navbar = () => {
 
 
             <div className='flex items-center gap-6'>
-                <img src={assets.search_icon} alt=""
+                {/* <img src={assets.search_icon} alt=""
                     onClick={() => setShowSearch(true)}
+                    className='w-7 cursor-pointer'
+                /> */}
+                <MagnifyingGlassIcon onClick={() => setShowSearch(true)}
                     className='w-7 cursor-pointer'
                 />
 
                 <div className='group relative'>
                     <Link to='/login'>
-                        <img src={assets.profile} alt=""
+                        {/* <img src={assets.profile} alt=""
                             className='w-7 cursor-pointer'
-                        />
+                        /> */}
+                        <UserIcon className='h-7 w-7 cursor-pointer' />
                     </Link>
 
 
                     <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
-                        <div className='flex flex-col gap-2 w-36 py-3 bg-slate-100 text-gray-500 roundedb text-center'>
+                        <div className='flex flex-col gap-2 w-36 py-3 bg-slate-100 text-gray-500 rounded-b text-center'>
                             <p className='cursor-pointer hover:text-black'>My Profile</p>
                             <p className='cursor-pointer hover:text-black'>Orders</p>
                             <p className='cursor-pointer hover:text-black'>Logout</p>
@@ -87,19 +91,22 @@ const Navbar = () => {
                 <Link
                     to='/cart' className='relative'
                 >
-                    <img src={assets.cart} alt=""
+                    {/* <img src={assets.cart} alt=""
                         className='w-7 min-w-5'
-                    />
-                    <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>
+                    /> */}
+                    <ShoppingCartIcon className='w-7 min-w-5' />
+                    <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[9px]'>
                         {getCartCount()}
                     </p>
                 </Link>
-                <img
+                {/* <img
                     onClick={() => setVisible(true)}
                     src={assets.menu2} alt=""
                     className='w-7 sm:hidden cursor-pointer'
-                />
+                /> */}
+                <Bars4Icon className='w-7 sm:hidden cursor-pointer' onClick={() => setVisible(true)} />
             </div>
+            
             {/* sidebar menu for small screens */}
             <div
                 className={`absolute 

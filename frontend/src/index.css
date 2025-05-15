@@ -23,4 +23,7 @@ a.active hr{
     
   }
 }
+a.active {
+  color: rgb(24, 137, 137);
+}
 @import "tailwindcss";
